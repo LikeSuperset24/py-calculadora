@@ -17,7 +17,7 @@ while True:
         eleccion = input("Ingrese el número de la operación que desea realizar: ")
     except Exception as e:
         # Manejo de excepciones generales (cualquier otra excepción)
-        print("Introduce solo numeros", str(e))
+        print("Introduce solo numeros")
     # Verificar si el usuario quiere salir
     if eleccion == '5':
         print("¡Hasta luego!")
@@ -29,7 +29,7 @@ while True:
         num2 = float(input("Ingrese el segundo número: "))
     except Exception as e:
         # Manejo de excepciones generales (cualquier otra excepción)
-        print("Introduce solo numeros", str(e))
+        print("Introduce solo numeros")
     # Realizar la operación seleccionada
     if eleccion == '1':
         print("Resultado: ", suma.suma(num1, num2))
