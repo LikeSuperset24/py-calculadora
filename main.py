@@ -1,3 +1,8 @@
+import division
+import suma
+import multiplicacion
+import resta
+
 while True:
     # Mostrar el menú
     print("Selecciona una operación:")
@@ -21,13 +26,13 @@ while True:
 
     # Realizar la operación seleccionada
     if eleccion == '1':
-        print("Resultado: ", suma(num1, num2))
+        print("Resultado: ", suma.suma(num1, num2))
     elif eleccion == '2':
-        print("Resultado: ", resta(num1, num2))
+        print("Resultado: ", resta.resta(num1, num2))
     elif eleccion == '3':
-        print("Resultado: ", multiplicacion(num1, num2))
+        print("Resultado: ", multiplicacion.multiplicacion(num1, num2))
     elif eleccion == '4':
-        print("Resultado: ", division(num1, num2))
+        print("Resultado: ", division.division(num1, num2))
     else:
         print("Opción no válida. Por favor, ingrese un número del 1 al 5.")
         
