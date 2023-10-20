@@ -1,7 +1,7 @@
 # Función de división
 # Toma dos argumentos "dividendo" y "divisor".
-def division(x, y):
+def division(dividendo, divisor):
     if y != 0:
-        return x / y
+        return dividendo / divisor
     else:
         return "¡Error! No puedes dividir por cero."
