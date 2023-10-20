@@ -14,7 +14,7 @@ while True:
 
     try:
         # Obtener la elección del usuario
-        eleccion = input("Ingrese el número de la operación que desea realizar: ")
+        eleccion = int(input("Ingrese el número de la operación que desea realizar: "))
     except Exception as e:
         # Manejo de excepciones generales (cualquier otra excepción)
         print("Introduce solo numeros")
