@@ -14,7 +14,7 @@ while True:
 
     try:
         # Obtener la elección del usuario
-        eleccion = int(input("Ingrese el número de la operación que desea realizar: "))
+        eleccion = (input("Ingrese el número de la operación que desea realizar: "))
     except Exception as e:
         # Manejo de excepciones generales (cualquier otra excepción)
         print("Introduce solo numeros")
@@ -25,8 +25,8 @@ while True:
 
     try:
         # Obtener los números de entrada
-        num1 = float(input("Ingrese el primer número: "))
-        num2 = float(input("Ingrese el segundo número: "))
+        num1 = int(input("Ingrese el primer número: "))
+        num2 = int(input("Ingrese el segundo número: "))
     except Exception as e:
         # Manejo de excepciones generales (cualquier otra excepción)
         print("Introduce solo numeros")
