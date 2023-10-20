@@ -12,18 +12,24 @@ while True:
     print("4. División")
     print("5. Salir")
 
-    # Obtener la elección del usuario
-    eleccion = input("Ingrese el número de la operación que desea realizar: ")
-
+    try:
+        # Obtener la elección del usuario
+        eleccion = input("Ingrese el número de la operación que desea realizar: ")
+    except Exception as e:
+        # Manejo de excepciones generales (cualquier otra excepción)
+        print("Introduce solo numeros", str(e))
     # Verificar si el usuario quiere salir
     if eleccion == '5':
         print("¡Hasta luego!")
         break
 
-    # Obtener los números de entrada
-    num1 = float(input("Ingrese el primer número: "))
-    num2 = float(input("Ingrese el segundo número: "))
-
+    try:
+        # Obtener los números de entrada
+        num1 = float(input("Ingrese el primer número: "))
+        num2 = float(input("Ingrese el segundo número: "))
+    except Exception as e:
+        # Manejo de excepciones generales (cualquier otra excepción)
+        print("Introduce solo numeros", str(e))
     # Realizar la operación seleccionada
     if eleccion == '1':
         print("Resultado: ", suma.suma(num1, num2))
